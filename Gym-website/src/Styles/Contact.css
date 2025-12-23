@@ -1,0 +1,93 @@
+.contact{
+    position: relative;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+.contact-overlay{
+    background: rgba(0, 0, 0, 0.8);
+    padding: 60px;
+    border-radius: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 25px rgba(255, 102, 0, 0.3);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.contact h2{
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #ff6600;
+}
+
+.conntact h2 span{
+    color: #fff;
+}
+.contact p{
+    margin-bottom: 40px;
+    font-size: 1rem;
+    color: #ccc;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group{
+    display: flex;
+    gap: 20px;
+}
+.input-group input{
+    flex: 1;
+}
+
+input,textarea{
+    background: transparent;
+    border: 2px solid #ff6600;
+    padding: 12px 15px;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: none;
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus{
+    border-color: #ffa64d;
+    box-shadow: 0 0 10px #ffa64d;
+}
+
+textarea{
+    resize: none;
+    min-height: 120px;
+}
+
+button{
+    background: #ff6600;
+    border: none;
+    padding: 15px;
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+button:hover{
+    background: #ffa64d;
+}
+
+@keyframes fadeInUp {
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
